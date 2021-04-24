@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>App test</title>
+</head>
+<body>
+  <header>
+  <h4>Test de Desarrollo Web</h4>
+  
+  </header>
+  <nav>
+    <p id="datos"></p> 
+    <p id="indicador-preguntas"></p>
+    <div id="nota"></div>
+ </nav>
+<hr>
+  <aside>
+     <form action="#" id="formulario">
+         <label for="nombre">Nombres</label> 
+         <input type="text" id="nombre" placeholder="Ingrese Nombres"><br>
+         <label for="apellidos">Apellidos</label>
+         <input type="text" id="apellido" placeholder="Ingrese Apellidos"><br>
+         <button type="submit">INICIAR</button>
+         <div id="mensaje">
+           
+         </div>
+     </form>
+  </aside>
+
+  <section id="container">
+   <div>
+      <div id="pregunta1"> 
+
+        <p> 1- Para que sirve la Etiqueta P ?</p> <br>
+        <form action="#">
+         <input type="radio" name="p1" id="opcion1" value="1"> <label for="1">Para Guardar parafos</label><br><br>
+         <input type="radio" name="p1" id="opcion2" value="2"> <label for="2" id="label">Para Formularios</label><br><br>
+         <input type="radio" name="p1" id="opcion3" value="3"> <label for="3">Input</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" >Anterior</a>     <a href="#" id="sig" onclick="sesion1()" >Siguiente</a>  
+          <div id="resultado1"></div>
+         </div>
+         
+       <div id="pregunta2"> 
+        <p> 2- Un input de Type = Date sirve para  ?</p> <br>
+        <form action="#">
+         <input type="radio" name="p2" id="opcion1" value="1"> <label for="1">Numeros</label><br><br>
+         <input type="radio" name="p2" id="opcion2" value="2"> <label for="2" id="label">Fechas</label><br><br>
+         <input type="radio" name="p2" id="opcion3" value="3"> <label for="3">caracteres</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior1()">Anterior</a>     <a href="#" id="sig" onclick="sesion2()">Siguiente</a>  
+          <div id="resultado2"></div>
+         </div>
+
+       <div id="pregunta3"> 
+        <p>3- Un input de Type = text sirve para  ?</p> <br>
+        <form action="#">
+         <input type="radio" name="p3" id="opcion1" value="1"> <label for="1">Fechas</label><br><br>
+         <input type="radio" name="p3" id="opcion2" value="2"> <label for="2" id="label">Taxtos</label><br><br>
+         <input type="radio" name="p3" id="opcion3" value="3"> <label for="3">Numeros</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior2()">Anterior</a>     <a href="#" id="sig" onclick="sesion3()" >Siguiente</a>  
+          <div id="resultado3"></div>
+       </div>
+ 
+       <div id="pregunta4"> 
+        <p>4- Un input de Type = number sirve para  ?</p> <br>
+        <form action="#">
+         <input type="radio" name="p4" id="opcion1" value="1"> <label for="1">Fechas</label><br><br>
+         <input type="radio" name="p4" id="opcion2" value="2"> <label for="2" id="label">Taxtos</label><br><br>
+         <input type="radio" name="p4" id="opcion3" value="3"> <label for="3">Numeros</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior3()">Anterior</a>     <a href="#" id="sig" onclick="sesion4()" >Siguiente</a>  
+          <div id="resultado4"></div>
+       </div>
+
+       <div id="pregunta5"> 
+         <form action="#">
+        <p>5- En CSS el comando que sirve para ponerle un color al texto es ?</p> <br>
+         <input type="radio" name="p5" id="opcion1" value="1"> <label for="1">color</label><br><br>
+         <input type="radio" name="p5" id="opcion2" value="2"> <label for="2" id="label"> margin-left</label><br><br>
+         <input type="radio" name="p5" id="opcion3" value="3"> <label for="3"> background-color</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior4()">Anterior</a>     <a href="#" id="sig" onclick="sesion5()">Siguiente</a>  
+          <div id="resultado5"></div>
+       </div>
+
+       <div id="pregunta6"> 
+         <form action="#">
+        <p>6- En CSS el comando que sirve para ponerle un color al fondo es ?</p> <br>
+         <input type="radio" name="p6" id="opcion1" value="1"> <label for="1">color</label><br><br>
+         <input type="radio" name="p6" id="opcion2" value="2"> <label for="2" id="label"> margin-left</label><br><br>
+         <input type="radio" name="p6" id="opcion3" value="3"> <label for="3"> background-color</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior5()">Anterior</a>     <a href="#" id="sig" onclick="sesion6()" >Siguiente</a>  
+          <div id="resultado6"></div>
+       </div>
+
+       <div id="pregunta7"> 
+        <p>7- En JavaScript  el document.getElementById() sirve para llamar ?</p> <br>
+        <form action="#">
+         <input type="radio" name="p7" id="opcion1" value="1"> <label for="1">una Clase</label><br><br>
+         <input type="radio" name="p7" id="opcion2" value="2"> <label for="2" id="label">una funcion</label><br><br>
+         <input type="radio" name="p7" id="opcion3" value="3"> <label for="3">un id</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior6()">Anterior</a>     <a href="#" id="sig" onclick="sesion7()" >Siguiente</a>  
+          <div id="resultado7"></div>
+       </div>
+
+       <div id="pregunta8"> 
+        <p>8- En JavaScript  el document.getElementById() sirve para llamar ?</p> <br>
+        <form action="#">
+         <input type="radio" name="p8" id="opcion1" value="1"> <label for="1">una Clase</label><br><br>
+         <input type="radio" name="p8" id="opcion2" value="2"> <label for="2" id="label">una funcion</label><br><br>
+         <input type="radio" name="p8" id="opcion3" value="3"> <label for="3">un id</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior7()">Anterior</a>     <a href="#" id="sig" onclick="sesion8()">Siguiente</a>  
+          <div id="resultado8"></div>
+       </div>
+
+       <div id="pregunta9"> 
+        <p>9- En JavaScript  un ciclo seria?</p> <br>
+        <form action="#">
+         <input type="radio" name="p9" id="opcion1" value="1"> <label for="1">un for</label><br><br>
+         <input type="radio" name="p9" id="opcion2" value="2"> <label for="2" id="label">una funcion</label><br><br>
+         <input type="radio" name="p9" id="opcion3" value="3"> <label for="3">onclick</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior8()">Anterior</a>     <a href="#" id="sig"  onclick="sesion9()">Siguiente</a>  
+          <div id="resultado9"></div>
+       </div>
+
+       <div id="pregunta10"> 
+        <p>10- En JavaScript cual no es un ciclo?</p> <br>
+        <form action="#">
+         <input type="radio" name="p10" id="opcion1" value="1"> <label for="1">un for</label><br><br>
+         <input type="radio" name="p10" id="opcion2" value="2"> <label for="2" id="label">forEcht</label><br><br>
+         <input type="radio" name="p10" id="opcion3" value="3"> <label for="3">let variable</label>
+        </form>
+         <br>
+          <br>
+          <a href="#" id="anterior" onclick="anterior9()">Anterior</a>     <a href="#" id="sig-ultimo" onclick="sesion10()">Siguiente</a>  
+          <div id="resultado10"></div>
+       </div>
+      </div>
+       <div id="panel">
+        <form action="#">
+          <button type="submit" id="bt1" >1</button>  
+          <button type="submit" id="bt2">2</button>
+          <button type="submit" id="bt3">3</button>  
+          <button type="submit" id="bt4">4</button>
+          <button type="submit" id="bt5" >5</button>  
+          <button type="submit" id="bt6">6</button>
+          <button type="submit" id="bt7">7</button>  
+          <button type="submit" id="bt8">8</button>
+          <button type="submit" id="bt9">9</button>  
+          <button type="submit" id="bt10">10</button>
+          <button type="submit" id="terminar">Terminar</button>
+          
+        </form>
+      </div>
+
+      
+  </section>
+  
+  <footer>
+    Universidad de cordoba 
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
